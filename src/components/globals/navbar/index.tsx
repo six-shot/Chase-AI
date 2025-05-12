@@ -2,8 +2,7 @@ import React from "react";
 import logo from "../../../../public/svgs/logo.avif";
 import Image from "next/image";
 import Link from "next/link";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaTelegramPlane } from "react-icons/fa";
+
 
 export default function Navbar() {
   return (
