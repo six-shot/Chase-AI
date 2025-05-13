@@ -46,14 +46,14 @@ export default function Home() {
               />
             </div>
             <p className="text-[#e6ecffb3] font-[family-name:var(--font-inter)]">
-              Join the waitlist <span className="text-[#ffff]">15,725+</span>{" "}
+              Join  <span className="text-[#ffff]">15,725+</span>{" "}
               other loving customers
             </p>
           </div>
           <h1 className="text-white text-[64px] font-medium font-[family-name:var(--font-poppins)] text-center leading-[70.4px]">
-            Trade Smarter with <br /> AI-enhanced trading <br /> tool
+            Trade smarter with <br /> AI-enhanced trading <br /> tool
           </h1>
-          <p className="text-[#e6ecffb3] text-center text-[20px] font-normal font-[family-name:var(--font-inter)] ">
+          <p className="text-[#e6ecffb3]  text-center font-normal font-[family-name:var(--font-inter)] ">
             Master crypto derivatives trading with AI-powered insights,
             perpetual <br /> contracts, and advanced trading features.
           </p>
