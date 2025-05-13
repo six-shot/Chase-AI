@@ -12,7 +12,7 @@ import asterik from "../../public/logo/asterik.svg";
 import eooks from "../../public/logo/eook.svg";
 import Marquee from "react-fast-marquee";
 import minicard from "../../public/svgs/minicard.svg";
-import { motion } from "framer-motion";
+
 
 const marqueeFeatures = [
   "Automate your Trades",
@@ -136,7 +136,12 @@ export default function Home() {
             </div>
           </Marquee>
         </div>
-        <div className="my-[44px]">
+        <div className="flex justify-center items-center mb-[96px]">
+          {" "}
+          <div className=" w-[1280px] h-[4px] line-bg" />
+        </div>
+
+        <div className="">
           <div className="max-w-[1440px] mx-auto px-[100px]">
             <div className="flex flex-col gap-3 justify-center items-center">
               <div className="w-[109px] h-[43px] rounded-[22px] button-gradient relative">

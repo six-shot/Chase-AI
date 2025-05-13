@@ -59,3 +59,8 @@ body {
   border-radius: 228px;
   opacity: 1;
 }
+
+.line-bg {
+  opacity: 0.14;
+  background: radial-gradient(63.67% 63.67% at 50% 50%, #8aa5ff 0%, #000 100%);
+}
