@@ -13,8 +13,5 @@ body {
 }
 
 .hero-bg {
-  background: radial-gradient(50% 85% at 50% 7.5%, #031457 0%, #000 100%);
-}
-.her-bg {
-  background: radial-gradient(25% 80% at 50% 7.5%, #031457 0%, #000 100%);
+  background: radial-gradient(50% 85% at 45% 7.5%, #031457 0%, #000 100%);
 }

@@ -9,7 +9,11 @@ import mask from "../../public/svgs/mask.svg";
 export default function Home() {
   return (
     <div className="relative hero-bg w-full">
-      <Image src={mask} alt="mask" className="absolute top-[-400px] -left-[600px]" />
+      <Image
+        src={mask}
+        alt="mask"
+        className="absolute top-[-400px] -left-[600px]"
+      />
 
       <div className="absolute top-0 h-[426px] w-full flex justify-center items-center">
         <Image
@@ -19,8 +23,7 @@ export default function Home() {
         />
       </div>
 
-
-      <div className="flex flex-col items-center justify-center pt-[68px]">
+      <div className="flex flex-col items-center justify-center pt-[68px] relative z-[10000]">
         <div className="flex flex-col items-center gap-6 pt-[95px]">
           <div className="flex gap-2.5 items-center">
             <div className="flex items-center">
@@ -46,8 +49,8 @@ export default function Home() {
               />
             </div>
             <p className="text-[#e6ecffb3] font-[family-name:var(--font-inter)]">
-              Join  <span className="text-[#ffff]">15,725+</span>{" "}
-              other loving customers
+              Join <span className="text-[#ffff]">15,725+</span> other loving
+              customers
             </p>
           </div>
           <h1 className="text-white text-[64px] font-medium font-[family-name:var(--font-poppins)] text-center leading-[70.4px]">
@@ -61,7 +64,7 @@ export default function Home() {
             <button className=" cursor-pointer bg-[#2934FF] shadow-[0px_8px_40px_0px_rgba(17,0,255,0.5),_0px_0px_0px_1px_rgba(0,85,255,0.12)] text-white px-[18px] h-[45px] rounded-[10px] font-medium font-[family-name:var(--font-inter)] border border-[#fff3]">
               Whitepaper
             </button>
-            <button className=" cursor-pointer bg-[#2934FF] shadow-[0px_8px_40px_0px_rgba(17,0,255,0.5),_0px_0px_0px_1px_rgba(0,85,255,0.12)] text-white px-[18px] h-[45px] rounded-[10px] font-[family-name:var(--font-inter)] border border-[#fff3]">
+            <button className=" cursor-pointer bg-[#2934FF]  text-white px-[18px] h-[45px] rounded-[10px] font-[family-name:var(--font-inter)] ">
               Enter Dapp
             </button>
           </div>
