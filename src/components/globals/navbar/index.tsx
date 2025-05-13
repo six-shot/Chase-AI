@@ -7,8 +7,8 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-      <div className="w-full nav-bg px-[45px]">
-        <div className="w-full max-w-[1440px] mx-auto  h-[68px] px-10 flex justify-between items-center">
+      <div className="w-full nav-bg ">
+        <div className="w-full max-w-[1440px] mx-auto  px-[90px]  h-[68px]  flex justify-between items-center">
           <Image src={logo} alt="logo" width={118} height={34} />
 
           <div className="flex items-center gap-[10px]">
