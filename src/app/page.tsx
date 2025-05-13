@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import heromask from "../../public/svgs/hero-mask.svg";
 import profileimg from "../../public/img/profile img.png";
@@ -19,6 +20,10 @@ import grid from "../../public/svgs/grid.png";
 import oneclick from "../../public/svgs/oneclick.png";
 import derivative from "../../public/svgs/derivation.png";
 import growth from "../../public/svgs/growth.png";
+import cta from "../../public/svgs/cta.svg";
+import ctablur from "../../public/svgs/ctablur.svg";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 const marqueeFeatures = [
   "Automate your Trades",
   "Instant Transactions",
@@ -62,6 +67,36 @@ const benefitsData = [
 ];
 
 export default function Home() {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const data = [
+    {
+      title: "How do I send money with Cash Tide?",
+      answer:
+        "Simply enter the recipient's phone number, specify the amount, and hit send. No banking details are needed!",
+    },
+    {
+      title: "Can I use Cash Tide internationally?",
+      answer:
+        "Absolutely! You can send money anywhere in the world, instantly and without hassle.",
+    },
+    {
+      title: "How does Cash Tide ensure security?",
+      answer:
+        "Cash Tide uses blockchain technology to ensure that all transactions are secure, transparent, and efficient.",
+    },
+    {
+      title: "Are there any fees for sending money?",
+      answer:
+        "No! All transfers are completely free—there are no hidden costs or service charges.",
+    },
+    {
+      title: "Is there a limit to how much I can send?",
+      answer:
+        "There are no strict limits on transfers, though certain regions may have transaction thresholds. Please check our terms for more details.",
+    },
+  ];
+
   return (
     <div className="relative  w-full">
       <div className="relative hero-bg ">
@@ -261,10 +296,8 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center items-center mb-[96px]">
-            {" "}
             <div className=" w-[1280px] h-[4px] line-bg" />
           </div>
-
           <div className="">
             <div className="">
               <div className="flex flex-col gap-3 justify-center items-center">
@@ -335,8 +368,155 @@ export default function Home() {
               </Marquee>
             </div>
           </div>
+          <div>
+            <div className="flex justify-center items-center mb-[96px]">
+              <div className=" w-[1280px] h-[4px] line-bg" />
+            </div>
+            <div className="flex flex-col gap-3 justify-center items-center">
+              <div className="w-[150px] h-[43px] rounded-[22px] button-gradient relative">
+                <div className="w-full h-full rounded-[22px] bg-black absolute top-[1px] left-[2px] flex items-center">
+                  <h6 className="gradient-text ml-4 font-[family-name:var(--font-inter)] font-semibold">
+                    FAQ'S SECTION
+                  </h6>
+                </div>
+              </div>
+              <h5 className="text-[44px] font-[family-name:var(--font-inter)] text-[#ffffff] font-medium">
+                Some Common FAQ's
+              </h5>
+              <p className="font-[family-name:var(--font-inter)] text-[#E6ECFFB2] text-center font-bold">
+                Get answers to your questions and learn about our platform
+              </p>
+              <div className="  flex flex-col p-[36px] w-[900px] gap-4 card-bg shadow-[0px_-22px_37px_0px_#1d1f130d] rounded-[20px]">
+                {data.map((item, index) => (
+                  <Accordion
+                    key={index}
+                    index={index}
+                    title={item.title}
+                    answer={item.answer}
+                    hoveredIndex={hoveredIndex}
+                    setHoveredIndex={setHoveredIndex}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-[100px]">
+            <div className="relative">
+              <Image
+                src={ctablur}
+                alt="cta"
+                className="absolute top-0 left-0 w-full h-full"
+              />
+              <div className="flex justify-center items-center mb-[96px]">
+                {" "}
+                <div className=" w-[1280px] h-[4px] line-bg" />
+              </div>
+
+              <div className="flex flex-col gap-3 justify-center items-center">
+                <div className="w-[269px] h-[43px] rounded-[22px] button-gradient relative">
+                  <div className="w-full h-full rounded-[22px] bg-black absolute top-[1px] left-[2px] flex items-center">
+                    <h6 className="gradient-text ml-4 font-[family-name:var(--font-inter)] font-semibold">
+                      WHAT YOU STILL WAITING FOR
+                    </h6>
+                  </div>
+                </div>
+                <h5 className="text-[44px] font-[family-name:var(--font-inter)] text-[#ffffff] font-medium">
+                  Grow Now with Chase AI
+                </h5>
+                <p className="font-[family-name:var(--font-inter)] text-[#E6ECFFB2] text-center font-bold">
+                  Unlock AI-driven trading to optimize decisions, enhance
+                  <br />
+                  efficiency, and accelerate your trading growth.
+                </p>
+                <div className="flex gap-4 items-center mt-3">
+                  <button className=" cursor-pointer bg-[#2934FF] shadow-[0px_8px_40px_0px_rgba(17,0,255,0.5),_0px_0px_0px_1px_rgba(0,85,255,0.12)] text-white px-[18px] h-[45px] rounded-[10px] font-medium font-[family-name:var(--font-inter)] border border-[#fff3]">
+                    Get Started Now
+                  </button>
+                  <button className="ml-2 cursor-pointer bg-[#031457] shadow-[0px_0px_0px_1px_rgba(0,85,255,0.12)] text-white px-[18px] h-[45px] rounded-[10px] font-medium font-[family-name:var(--font-inter)]">
+                    Enter Dapp
+                  </button>
+                </div>
+              </div>
+              <div className="-mt-[200px] flex justify-center">
+                <Image src={cta} alt="cta" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 }
+
+const Accordion = ({
+  title,
+  answer,
+  index,
+  hoveredIndex,
+  setHoveredIndex,
+}: {
+  title: string;
+  answer: string;
+  index: number;
+  hoveredIndex: number | null;
+  setHoveredIndex: (index: number | null) => void;
+}) => {
+  const isOpen = hoveredIndex === index;
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      viewport={{ once: false }}
+      onClick={() => setHoveredIndex(isOpen ? null : index)}
+      className="relative p-[1px] overflow-hidden cursor-pointer"
+    >
+      <div className="stroke-rectangle absolute inset-0"></div>
+      {isOpen && <div className="stroke-rectangle is-gradient"></div>}
+      <div className=" faq-card rounded-[12px] font-[family-name:var(--font-inter)] py-[16px]">
+        <motion.button
+          className="flex justify-between items-center w-full px-[16px] cursor-pointer "
+          whileHover={{ scale: 1.01 }}
+          transition={{ duration: 0.2 }}
+        >
+          <span className="text-[16px] text-[#ffff] font-medium">{title}</span>
+          <motion.svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            animate={isOpen ? { rotate: 180 } : { rotate: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <path
+              d="M19 9L12 16L5 9"
+              stroke="#ffffff"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </motion.svg>
+        </motion.button>
+
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="overflow-hidden"
+            >
+              <div className=" text-[1rem] text-[#ffffff] mt-[21px] px-[16px] ">
+                {answer}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </motion.div>
+  );
+};
