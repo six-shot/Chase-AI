@@ -12,7 +12,8 @@ import asterik from "../../public/logo/asterik.svg";
 import eooks from "../../public/logo/eook.svg";
 import Marquee from "react-fast-marquee";
 import minicard from "../../public/svgs/minicard.svg";
-
+import star from "../../public/svgs/star.png";
+import check from "../../public/svgs/check.svg";
 const marqueeFeatures = [
   "Automate your Trades",
   "Instant Transactions",
@@ -141,7 +142,7 @@ export default function Home() {
         </div>
 
         <div className="max-w-[1440px] mx-auto  px-[60px]">
-          <div className="pb-[96px] pt-[44px] grid grid-cols-3 gap-[25px]  items-center relative">
+          <div className="pb-[96px] pt-[44px] grid grid-cols-3 gap-[25px]  items-center relative z-[40]">
             <div className="col-span-1 h-[351px] grid-card relative">
               <div className=" w-full grid-inner-card h-full absolute top-[0.5px] left-[1px]">
                 <div className="p-8">
@@ -152,6 +153,39 @@ export default function Home() {
                     Chase AI empowers both experts and beginners to trade
                     effortlessly.
                   </p>
+                  <div className="mt-7 flex flex-col items-start group">
+                    <div className="h-[68px] gap-[9px] bg-[#16171a44] rounded-[12px] border-[0.8px] border-[#232324] backdrop-blur-[5px] transition-all duration-300 group-hover:blur-[5px] group-hover:opacity-50 px-4 flex items-center">
+                      <div className="w-[32px] h-[32px] rounded-[4px] bg-[#3d404349] flex items-center">
+                        <Image src={star} alt="star" />
+                      </div>
+                      <h5 className="text-base font-[family-name:var(--font-inter)] text-white font-medium">
+                        Expert Traders
+                      </h5>
+                      <Image src={check} alt="check" />
+                    </div>
+                    <div className="ml-[27px] -mt-[20px]  h-[68px] bg-[#16171a44] rounded-[12px] border-[0.8px] border-[#232324] relative z-[20] backdrop-blur-[5px] transition-all duration-300 group-hover:scale-110">
+                      <div className="h-[68px] gap-[9px] bg-[#16171a44] rounded-[12px] border-[0.8px] border-[#232324] backdrop-blur-[5px] transition-all duration-300  px-4 flex items-center">
+                        <div className="w-[32px] h-[32px] rounded-[4px] bg-[#3d4043] flex items-center">
+                          <Image src={star} alt="star" />
+                        </div>
+                        <h5 className="text-base font-[family-name:var(--font-inter)] text-white font-medium">
+                          Intermediate Traders
+                        </h5>
+                        <Image src={check} alt="check" />
+                      </div>
+                    </div>
+                    <div className="ml-[110px] -mt-[20px]  h-[68px] bg-[#16171a44] rounded-[12px] border-[0.8px] border-[#232324] relative z-[10] backdrop-blur-[5px] transition-all duration-300 group-hover:blur-[5px] group-hover:opacity-50">
+                      <div className="h-[68px] gap-[9px] bg-[#16171a44] rounded-[12px] border-[0.8px] border-[#232324] backdrop-blur-[5px] transition-all duration-300 group-hover:blur-[5px] group-hover:opacity-50 px-4 flex items-center">
+                        <div className="w-[32px] h-[32px] rounded-[4px] bg-[#3d4043] flex items-center">
+                          <Image src={star} alt="star" />
+                        </div>
+                        <h5 className="text-base font-[family-name:var(--font-inter)] text-white font-medium">
+                          Novice Trader
+                        </h5>
+                        <Image src={check} alt="check" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
