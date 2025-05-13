@@ -14,7 +14,7 @@ body {
 
 .hero-bg {
   background: radial-gradient(50% 85% at 45% 7.5%, #031457 0%, #000 100%);
-  height: 500px;
+  height: 550px;
 }
 .logo-mask {
   mask-image: linear-gradient(
