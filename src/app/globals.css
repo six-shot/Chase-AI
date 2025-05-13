@@ -15,3 +15,47 @@ body {
 .hero-bg {
   background: radial-gradient(50% 85% at 45% 7.5%, #031457 0%, #000 100%);
 }
+.logo-mask {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(0, 0, 0) 12.5%,
+    rgb(0, 0, 0) 87.5%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  opacity: 50%;
+}
+.bg-cards {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    #000 12.5%,
+    #000 87.5%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.button-gradient {
+  background: linear-gradient(96deg, #2934ff 0%, rgba(36, 65, 212, 0) 50%);
+  padding: 1px 2px;
+}
+.gradient-text {
+  background: linear-gradient(95deg, #8aa5ff 22.37%, #854dff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-card {
+  border-radius: 16px;
+  background: radial-gradient(96% 96% at 50% 7.5%, #121426 0%, #000 100%);
+}
+.bg-mini-card {
+  background: radial-gradient(
+    97% 114.99999999999999% at 13.200000000000001% 3.6999999999999997%,
+    var(--token-e8bc8706-b247-48f0-95ed-879074c7f908, rgb(18, 20, 38))
+      /* {"name":"dark blue"} */ 0%,
+    var(--token-6d7bfc0f-867f-43f5-837b-f61a13bf9490, rgb(0, 0, 0))
+      /* {"name":"black"} */ 100%
+  );
+  border-radius: 228px;
+  opacity: 1;
+}
