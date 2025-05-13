@@ -7,18 +7,14 @@ body {
 .nav-bg {
   background: linear-gradient(
     180deg,
-    var(--token-6d7bfc0f-867f-43f5-837b-f61a13bf9490, #000000) -50%,
+    #000000 -50%,
     rgba(0, 0, 0, 0) 170.00000000000003%
   );
 }
 
 .hero-bg {
-  background: radial-gradient(
-    80% 25% at 50% 7.5%,
-    var(--token-c6d9a740-f8af-44c7-ac7a-31b27a79b7f2, #000e47) 0%,
-    var(--token-6d7bfc0f-867f-43f5-837b-f61a13bf9490, rgb(0, 0, 0)) 100%
-  );
+  background: radial-gradient(50% 85% at 50% 7.5%, #031457 0%, #000 100%);
 }
-.her-bg{
+.her-bg {
   background: radial-gradient(25% 80% at 50% 7.5%, #031457 0%, #000 100%);
 }

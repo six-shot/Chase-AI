@@ -8,7 +8,7 @@ import mask from "../../public/svgs/mask.svg";
 
 export default function Home() {
   return (
-    <div className="relative her-bg w-full">
+    <div className="relative bg-red-500 hero-bg w-full">
       <Image src={mask} alt="mask" className="absolute top-[-400px] -left-[600px]" />
 
       <div className="absolute top-0 h-[426px] w-full flex justify-center items-center">
