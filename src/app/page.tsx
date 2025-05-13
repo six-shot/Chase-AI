@@ -4,13 +4,13 @@ import profileimg from "../../public/img/profile img.png";
 import profileimg1 from "../../public/img/profile img1.png";
 import profileimg2 from "../../public/img/profile img2.png";
 import profileimg3 from "../../public/img/profile img4.png";
-import mask from "../../public/svgs/mask.svg"
+import mask from "../../public/svgs/mask.svg";
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="relative her-bg w-full">
       <Image src={mask} alt="mask" className="absolute top-[-400px] -left-[600px]" />
-    
+
       <div className="absolute top-0 h-[426px] w-full flex justify-center items-center">
         <Image
           src={heromask}
@@ -18,6 +18,7 @@ export default function Home() {
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[10]"
         />
       </div>
+
 
       <div className="flex flex-col items-center justify-center mt-[68px]">
         <div className="flex flex-col items-center gap-6 pt-[95px]">

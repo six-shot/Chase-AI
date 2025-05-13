@@ -19,3 +19,6 @@ body {
     var(--token-6d7bfc0f-867f-43f5-837b-f61a13bf9490, rgb(0, 0, 0)) 100%
   );
 }
+.her-bg{
+  background: radial-gradient(25% 80% at 50% 7.5%, #031457 0%, #000 100%);
+}
