@@ -14,6 +14,7 @@ body {
 
 .hero-bg {
   background: radial-gradient(50% 85% at 45% 7.5%, #031457 0%, #000 100%);
+  height: 626px;
 }
 .logo-mask {
   mask-image: linear-gradient(
@@ -63,4 +64,24 @@ body {
 .line-bg {
   opacity: 0.14;
   background: radial-gradient(63.67% 63.67% at 50% 50%, #8aa5ff 0%, #000 100%);
+}
+.grid-card {
+  border-radius: 16px;
+  background: linear-gradient(133deg, #8aa5ff 0%, #000 66%);
+}
+.grid-card-2 {
+  border-radius: 16px;
+  background: linear-gradient(168deg, #8aa5ff 0%, #000 23%);
+}
+.grid-card-3 {
+  border-radius: 16px;
+  background: linear-gradient(180deg, #8aa5ff 0%, #000 10%);
+}
+.grid-inner-card {
+  border-radius: 16px;
+  background: radial-gradient(96% 96% at 50% 7.5%, #121426 0%, #000 100%);
+}
+.bottom-card {
+  opacity: 0.63;
+  background: linear-gradient(180deg, rgba(11, 12, 23, 0) 0%, #000 100%);
 }
