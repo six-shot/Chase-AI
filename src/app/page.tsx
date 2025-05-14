@@ -22,6 +22,9 @@ import growth from "../../public/svgs/growth.png";
 import cta from "../../public/svgs/cta.svg";
 import mark from "../../public/svgs/mark.svg";
 import hand from "../../public/svgs/hand.svg";
+import chase from "../../public/svgs/chase.png";
+import others from "../../public/svgs/others.png";
+import smallcheck from "../../public/svgs/smallcheck.svg";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 const marqueeFeatures = [
@@ -540,6 +543,126 @@ export default function Home() {
               <p className="font-[family-name:var(--font-inter)] text-[#E6ECFFB2] text-center font-bold">
                 Connect with your favorite tools to streamline workflows
               </p>
+            </div>
+          </div>
+          <div className="py-[100px] h-full ">
+            <div className=" w-[1280px] h-[4px] line-bg " />
+            <div className="flex flex-col justify-center items-center">
+              <div className="w-[138px] h-[43px] rounded-[22px] button-gradient relative mt-[100px]">
+                <div className="w-full h-full rounded-[22px] bg-black absolute top-[1px] left-[2px] flex items-center">
+                  <h6 className="gradient-text ml-4 font-[family-name:var(--font-inter)] font-semibold">
+                    COMPARISON
+                  </h6>
+                </div>
+              </div>
+              <h5 className="text-[44px] font-[family-name:var(--font-inter)] text-[#ffffff] font-medium">
+                Why Chase AI Stands Out
+              </h5>
+              <p className="font-[family-name:var(--font-inter)] text-[#E6ECFFB2] text-center font-bold">
+                See how we compare against others in performance, growth
+              </p>
+            </div>
+            <div className="flex justify-center mt-[44px]">
+              <div className="flex gap-[27px]">
+                <div className="w-[483px]">
+                  <div className="w-full flex justify-center items-center h-[62px] ">
+                    <Image src={chase} className="" alt="chase" width={118} height={34} />
+                  </div>
+                  <div className="roadmap-card-bg w-full h-[339px] relative mt-[9px]">
+                    <div className="absolute top-[1px] right-[1px] w-full h-full roadmap-card px-[30px] pt-[26px] font-[family-name:var(--font-inter)]">
+                      <div className="">
+                        <div>
+                          <div className=" flex flex-col gap-[21px]">
+                            <div className="flex gap-2.5 items-center">
+                              <Image src={smallcheck} alt="mark" />
+                              <h5 className="text-[#E6ECFFB2] text-[17px]">
+                                Build AI-powered trading engine
+                              </h5>
+                            </div>
+                            <div className="w-full h-[1px] divider" />
+                            <div className="flex gap-2.5 items-center">
+                              <Image src={smallcheck} alt="mark" />
+                              <h5 className="text-[#E6ECFFB2] text-[17px]">
+                                Conduct security audits & compliance checks
+                              </h5>
+                            </div>
+                            <div className="w-full h-[1px] divider" />
+                            <div className="flex gap-2.5 items-center">
+                              <Image src={smallcheck} alt="mark" />
+                              <h5 className="text-[#E6ECFFB2] text-[17px]">
+                                Train AI models & optimize strategies
+                              </h5>
+                            </div>
+                            <div className="w-full h-[1px] divider" />
+                            <div className="flex gap-2.5 items-center">
+                              <Image src={smallcheck} alt="mark" />
+                              <h5 className="text-[#E6ECFFB2] text-[17px]">
+                                Launch beta testing & gather feedback
+                              </h5>
+                            </div>
+                            <div className="w-full h-[1px] divider" />
+                            <div className="flex gap-2.5 items-center ">
+                              <Image src={smallcheck} alt="mark" />
+                              <h5 className="text-[#E6ECFFB2] text-[17px]">
+                                Official Chase AI platform launch
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-[483px]">
+                  <div className="w-full flex justify-center items-center h-[62px]">
+                    <Image src={others} alt="others"/>
+                  </div>
+                  <div className="roadmap-card-bg w-full h-[339px] relative mt-[9px]">
+                    <div className="absolute top-[1px] right-[1px] w-full h-full roadmap-card px-[30px] pt-[26px] font-[family-name:var(--font-inter)]">
+                      <div className="">
+                        <div>
+                          <div className=" flex flex-col gap-[21px]">
+                            <div className="flex gap-2.5 items-center">
+                              <Image src={smallcheck} alt="mark" />
+                              <h5 className="text-[#E6ECFFB2] text-[17px]">
+                                Build AI-powered trading engine
+                              </h5>
+                            </div>
+                            <div className="w-full h-[1px] divider" />
+                            <div className="flex gap-2.5 items-center">
+                              <Image src={smallcheck} alt="mark" />
+                              <h5 className="text-[#E6ECFFB2] text-[17px]">
+                                Conduct security audits & compliance checks
+                              </h5>
+                            </div>
+                            <div className="w-full h-[1px] divider" />
+                            <div className="flex gap-2.5 items-center">
+                              <Image src={smallcheck} alt="mark" />
+                              <h5 className="text-[#E6ECFFB2] text-[17px]">
+                                Train AI models & optimize strategies
+                              </h5>
+                            </div>
+                            <div className="w-full h-[1px] divider" />
+                            <div className="flex gap-2.5 items-center">
+                              <Image src={smallcheck} alt="mark" />
+                              <h5 className="text-[#E6ECFFB2] text-[17px]">
+                                Launch beta testing & gather feedback
+                              </h5>
+                            </div>
+                            <div className="w-full h-[1px] divider" />
+                            <div className="flex gap-2.5 items-center ">
+                              <Image src={smallcheck} alt="mark" />
+                              <h5 className="text-[#E6ECFFB2] text-[17px]">
+                                Official Chase AI platform launch
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div>
