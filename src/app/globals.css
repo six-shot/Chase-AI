@@ -86,9 +86,22 @@ body {
   background: linear-gradient(180deg, rgba(11, 12, 23, 0) 0%, #000 100%);
 }
 
-
-.faq-card{
+.faq-card {
   border-radius: 10px;
-background: linear-gradient(94deg, #121426 0%, #000 100%);
-box-shadow: 0px 1px 0px 0px rgba(138, 165, 255, 0.20) inset;
+  background: linear-gradient(94deg, #121426 0%, #000 100%);
+  box-shadow: 0px 1px 0px 0px rgba(138, 165, 255, 0.2) inset;
+}
+.roadmap-bg {
+  border-radius: 34px;
+  background: radial-gradient(341% 96% at 50% 7.5%, #121426 0%, #000 100%);
+  box-shadow: 0px 1px 6px 0px rgba(45, 24, 93, 0.1);
+}
+
+.roadmap-card {
+  border-radius: 16px;
+  background: radial-gradient(96% 96% at 50% 7.5%, #121426 0%, #000 100%);
+}
+.roadmap-card-bg {
+  border-radius: 16px;
+  background: linear-gradient(180deg, #8aa5ff 0%, #000 53%);
 }

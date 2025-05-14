@@ -5,7 +5,6 @@ import profileimg from "../../public/img/profile img.png";
 import profileimg1 from "../../public/img/profile img1.png";
 import profileimg2 from "../../public/img/profile img2.png";
 import profileimg3 from "../../public/img/profile img4.png";
-import mask from "../../public/svgs/mask.svg";
 import opai from "../../public/logo/opal.svg";
 import dune from "../../public/logo/dune.svg";
 import oasis from "../../public/logo/oasis.svg";
@@ -21,10 +20,17 @@ import oneclick from "../../public/svgs/oneclick.png";
 import derivative from "../../public/svgs/derivation.png";
 import growth from "../../public/svgs/growth.png";
 import cta from "../../public/svgs/cta.svg";
-import ctablur from "../../public/svgs/ctablur.svg";
+import mark from "../../public/svgs/mark.svg";
+import hand from "../../public/svgs/hand.svg";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 const marqueeFeatures = [
+  "Automate your Trades",
+  "Instant Transactions",
+  "Blockchain-Powered",
+  "Global Access",
+  "Instant Transfers",
+  "Zero Fees",
   "Automate your Trades",
   "Instant Transactions",
   "Blockchain-Powered",
@@ -100,11 +106,11 @@ export default function Home() {
   return (
     <div className="relative  w-full">
       <div className="relative hero-bg ">
-        <Image
+        {/* <Image
           src={mask}
           alt="mask"
           className="absolute top-[-400px] -left-[600px] z-[30] opacity-[70%]"
-        />
+        /> */}
 
         <div className="absolute top-0 h-[426px] w-full flex justify-center items-center">
           <Image
@@ -366,6 +372,129 @@ export default function Home() {
                   ))}
                 </div>
               </Marquee>
+            </div>
+          </div>
+          <div className="py-[100px]">
+            <div className="flex flex-col gap-3 justify-center items-center">
+              <h5 className="text-[44px] font-[family-name:var(--font-inter)] text-[#ffffff] font-medium">
+                Roadmap
+              </h5>
+              <p className="font-[family-name:var(--font-inter)] text-[#E6ECFFB2] text-center font-bold">
+                Chase AI's Roadmap Drives Innovation, From Launch to <br />{" "}
+                Global Expansion
+              </p>
+            </div>
+            <div className="mt-5 flex  flex-col items-center justify-center">
+              <div className="w-[330px] h-[57px] roadmap-bg"></div>
+              <div className="mt-[36px] flex gap-[27px]">
+                <div className="roadmap-card-bg w-[484px] h-[504px] relative">
+                  <div className="absolute top-[1px] right-[1px] w-full h-full roadmap-card p-6 font-[family-name:var(--font-inter)]">
+                    <h5 className="text-white text-[17px]">Phase - I</h5>{" "}
+                    <h5 className="text-[38px] mt-[21px] font-medium  text-white leading-[42px]">
+                      Development
+                    </h5>
+                    <div className="">
+                      <button className="my-[26px] w-full cursor-pointer bg-[#031457] shadow-[0px_0px_0px_1px_rgba(0,85,255,0.12)] text-white text-[17px] h-[50px] rounded-[10px] font-[family-name:var(--font-inter)]">
+                        Completed
+                      </button>
+                      <div>
+                        <h5 className="text-[#E6ECFFB2] text-[17px]">
+                          Objectives:
+                        </h5>
+                        <div className="mt-[23px] flex flex-col gap-[21px]">
+                          <div className="flex gap-2 items-center">
+                            <Image src={mark} alt="mark" />
+                            <h5 className="text-[#E6ECFFB2] text-[17px]">
+                              Build AI-powered trading engine
+                            </h5>
+                          </div>
+                          <div className="flex gap-2 items-center">
+                            <Image src={mark} alt="mark" />
+                            <h5 className="text-[#E6ECFFB2] text-[17px]">
+                              Conduct security audits & compliance checks
+                            </h5>
+                          </div>
+                          <div className="flex gap-2 items-center">
+                            <Image src={mark} alt="mark" />
+                            <h5 className="text-[#E6ECFFB2] text-[17px]">
+                              Train AI models & optimize strategies
+                            </h5>
+                          </div>
+                          <div className="flex gap-2 items-center">
+                            <Image src={mark} alt="mark" />
+                            <h5 className="text-[#E6ECFFB2] text-[17px]">
+                              Launch beta testing & gather feedback
+                            </h5>
+                          </div>
+                          <div className="flex gap-2 items-center mt-4">
+                            <Image src={mark} alt="mark" />
+                            <h5 className="text-[#E6ECFFB2] text-[17px]">
+                              Official Chase AI platform launch
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="roadmap-card-bg w-[484px] h-[504px] relative">
+                  <div className="absolute top-[1px] right-[1px] w-full h-full roadmap-card p-6 font-[family-name:var(--font-inter)]">
+                    <h5 className="text-white text-[17px]">Phase - I</h5>{" "}
+                    <h5 className="text-[38px] mt-[21px] font-medium  text-white leading-[42px]">
+                      Development
+                    </h5>
+                    <div className="">
+                      <button className="my-[26px] w-full cursor-pointer bg-[#031457] shadow-[0px_0px_0px_1px_rgba(0,85,255,0.12)] text-white text-[17px] h-[50px] rounded-[10px] font-[family-name:var(--font-inter)]">
+                        Completed
+                      </button>
+                      <div>
+                        <h5 className="text-[#E6ECFFB2] text-[17px]">
+                          Objectives:
+                        </h5>
+                        <div className="mt-[23px] flex flex-col gap-[21px]">
+                          <div className="flex gap-2 items-center">
+                            <Image src={mark} alt="mark" />
+                            <h5 className="text-[#E6ECFFB2] text-[17px]">
+                              Build AI-powered trading engine
+                            </h5>
+                          </div>
+                          <div className="flex gap-2 items-center">
+                            <Image src={mark} alt="mark" />
+                            <h5 className="text-[#E6ECFFB2] text-[17px]">
+                              Conduct security audits & compliance checks
+                            </h5>
+                          </div>
+                          <div className="flex gap-2 items-center">
+                            <Image src={mark} alt="mark" />
+                            <h5 className="text-[#E6ECFFB2] text-[17px]">
+                              Train AI models & optimize strategies
+                            </h5>
+                          </div>
+                          <div className="flex gap-2 items-center">
+                            <Image src={mark} alt="mark" />
+                            <h5 className="text-[#E6ECFFB2] text-[17px]">
+                              Launch beta testing & gather feedback
+                            </h5>
+                          </div>
+                          <div className="flex gap-2 items-center">
+                            <Image src={mark} alt="mark" />
+                            <h5 className="text-[#E6ECFFB2] text-[17px]">
+                              Official Chase AI platform launch
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="px-4 gap-2.5 h-[49px] rounded-full bg-mini-card flex items-center mt-4">
+                <Image src={hand} alt="hand" />
+                <h5 className="text-[#E6ECFFB2] text-sm font-[family-name:var(--font-inter)]">
+                  Chase AI - Revolutionizing AI Trading Globally
+                </h5>
+              </div>
+              <div className="mt-[88px]"></div>
             </div>
           </div>
           <div>
