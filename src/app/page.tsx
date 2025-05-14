@@ -25,7 +25,11 @@ import hand from "../../public/svgs/hand.svg";
 import chase from "../../public/svgs/chase.png";
 import others from "../../public/svgs/others.png";
 import smallcheck from "../../public/svgs/smallcheck.svg";
+import signals from "../../public/svgs/signals.svg";
 import { motion, AnimatePresence } from "framer-motion";
+import graph from "../../public/svgs/graph.svg";
+import optimization from "../../public/svgs/optimization.svg";
+import management from "../../public/svgs/management.svg";
 import { useState } from "react";
 const marqueeFeatures = [
   "Automate your Trades",
@@ -527,7 +531,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center mb-[100px] ">
+          <div className="flex flex-col justify-center items-center  ">
             <div className=" w-[1280px] h-[4px] line-bg " />
             <div className="w-[147px] h-[43px] rounded-[22px] button-gradient relative mt-[100px]">
               <div className="w-full h-full rounded-[22px] bg-black absolute top-[1px] left-[2px] flex items-center">
@@ -543,6 +547,64 @@ export default function Home() {
               <p className="font-[family-name:var(--font-inter)] text-[#E6ECFFB2] text-center font-bold">
                 Connect with your favorite tools to streamline workflows
               </p>
+            </div>
+            <div className="mt-[44px] grid grid-cols-3 gap-8 ">
+              <div className="p-[32px] gradient-card w-[355px] ">
+                <Image src={signals} alt="signals" />
+                <div className="mt-6 flex flex-col gap-4">
+                  <h5 className="text-[#ffffff] text-[23px] font-[family-name:var(--font-inter)] font-medium">
+                    AI-Driven Trading Signals
+                  </h5>
+                  <h5 className="text-[#E6ECFFB2]  font-[family-name:var(--font-inter)]">
+                    Leverage real-time AI-generated insights to detect
+                    profitable market movements before they happen.
+                  </h5>
+                </div>
+              </div>
+              <div className="p-[32px] gradient-card w-[355px] ">
+                <Image src={signals} alt="signals" />
+                <div className="mt-6 flex flex-col gap-4">
+                  <h5 className="text-[#ffffff] text-[23px] font-[family-name:var(--font-inter)] font-medium">
+                    AI-Powered Auto Trades
+                  </h5>
+                  <h5 className="text-[#E6ECFFB2]  font-[family-name:var(--font-inter)]">
+                    Execute trades seamlessly with AI-powered bots tailored to
+                    your risk profile and investment goals.
+                  </h5>
+                </div>
+              </div>
+              <div className="p-[32px] gradient-card w-[355px] ">
+                <Image src={signals} alt="signals" />
+                <div className="mt-6 flex flex-col gap-4">
+                  <h5 className="text-[#ffffff] text-[23px] font-[family-name:var(--font-inter)] font-medium">
+                    Smart Risk Management
+                  </h5>
+                  <h5 className="text-[#E6ECFFB2]  font-[family-name:var(--font-inter)]">
+                    Stay protected with AI-driven alerts that optimize portfolio
+                    safety and prevent unnecessary losses.
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-8 justify-center items-center mt-[44px]">
+              <div className="flex gap-2.5 items-center">
+                <Image src={graph} alt="graph" />
+                <h5 className="text-[#E6ECFFB2]  font-[family-name:var(--font-inter)]">
+                  AI-Driven Trading Signals
+                </h5>
+              </div>
+              <div className="flex gap-2.5 items-center">
+                <Image src={optimization} alt="optimization" />
+                <h5 className="text-[#E6ECFFB2]  font-[family-name:var(--font-inter)]">
+                  Dynamic Portfolio Optimization
+                </h5>
+              </div>
+              <div className="flex gap-2.5 items-center">
+                <Image src={management} alt="management" />
+                <h5 className="text-[#E6ECFFB2]  font-[family-name:var(--font-inter)]">
+                  Adaptive Risk Management
+                </h5>
+              </div>
             </div>
           </div>
           <div className="py-[100px] h-full ">
@@ -688,6 +750,7 @@ export default function Home() {
                 Capture leads, analyze trends, and centralize critical insights
               </p>
             </div>
+            <div className="mt-[44px]"></div>
           </div>
           <div>
             <div className="flex justify-center items-center mb-[96px]">
