@@ -566,7 +566,13 @@ export default function Home() {
               <div className="flex gap-[27px]">
                 <div className="w-[483px]">
                   <div className="w-full flex justify-center items-center h-[62px] ">
-                    <Image src={chase} className="" alt="chase" width={118} height={34} />
+                    <Image
+                      src={chase}
+                      className=""
+                      alt="chase"
+                      width={118}
+                      height={34}
+                    />
                   </div>
                   <div className="roadmap-card-bg w-full h-[339px] relative mt-[9px]">
                     <div className="absolute top-[1px] right-[1px] w-full h-full roadmap-card px-[30px] pt-[26px] font-[family-name:var(--font-inter)]">
@@ -615,7 +621,7 @@ export default function Home() {
                 </div>
                 <div className="w-[483px]">
                   <div className="w-full flex justify-center items-center h-[62px]">
-                    <Image src={others} alt="others"/>
+                    <Image src={others} alt="others" />
                   </div>
                   <div className="roadmap-card-bg w-full h-[339px] relative mt-[9px]">
                     <div className="absolute top-[1px] right-[1px] w-full h-full roadmap-card px-[30px] pt-[26px] font-[family-name:var(--font-inter)]">
@@ -663,6 +669,24 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="pb-[50px]">
+            <div className=" w-[1280px] h-[4px] line-bg" />
+            <div className="flex justify-center flex-col items-center mt-[50px]">
+              <div className="w-[207px] h-[43px] rounded-[22px] button-gradient relative">
+                <div className="w-full h-full rounded-[22px] bg-black absolute top-[1px] left-[2px] flex items-center">
+                  <h6 className="gradient-text ml-4 font-[family-name:var(--font-inter)] font-semibold">
+                    AI-DRIVEN EFFICIENCY
+                  </h6>
+                </div>
+              </div>
+              <h5 className="text-[44px] font-[family-name:var(--font-inter)] text-[#ffffff] font-medium">
+                Never Miss another Trade
+              </h5>
+              <p className="font-[family-name:var(--font-inter)] text-[#E6ECFFB2] text-center font-bold">
+                Capture leads, analyze trends, and centralize critical insights
+              </p>
             </div>
           </div>
           <div>
