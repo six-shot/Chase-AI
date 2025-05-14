@@ -496,32 +496,50 @@ export default function Home() {
               </div>
               <div className="mt-[88px]"></div>
             </div>
-            <div className="pt-[96px] pb-[100px] flex flex-col justify-center items-center">
-              <div className=" w-[1280px] h-[4px] line-bg mb-[96px]" />
-              <div className="w-[163px] h-[43px] rounded-[22px] button-gradient relative">
-                <div className="w-full h-full rounded-[22px] bg-black absolute top-[1px] left-[2px] flex items-center">
-                  <h6 className="gradient-text ml-4 font-[family-name:var(--font-inter)] font-semibold">
-                    FOUNDERS NOTE
-                  </h6>
-                </div>
+          </div>
+          <div className=" flex flex-col justify-center items-center">
+            <div className=" w-[1280px] h-[4px] line-bg mb-[96px]" />
+            <div className="w-[163px] h-[43px] rounded-[22px] button-gradient relative">
+              <div className="w-full h-full rounded-[22px] bg-black absolute top-[1px] left-[2px] flex items-center">
+                <h6 className="gradient-text ml-4 font-[family-name:var(--font-inter)] font-semibold">
+                  FOUNDERS NOTE
+                </h6>
               </div>
-              <div className="mt-[26px] font-[family-name:var(--font-inter)]">
-                <h4 className="w-[640px] text-center text-[32px] text-white">
-                  Chase AI simplifies crypto derivatives trading with AI-powered
-                  automation.{" "}
-                  <span className="text-[#8AA5FF]">
-                    From personalized market insights to seamless execution
-                  </span>
-                  , we empower you to trade with confidence, control, and
-                  precision.
-                </h4>
-                <div className="mt-[23px] flex gap-4 justify-center items-center">
-                  <div className="w-7 h-7 rounded-full bg-[#8AA5FF]"></div>
-                  <h5 className="text-[#E6ECFFB2] text-[16px]">
-                    Co-founder & ex google designer
-                  </h5>
-                </div>
+            </div>
+            <div className="mt-[26px] font-[family-name:var(--font-inter)] pb-[100px]">
+              <h4 className="w-[640px] text-center text-[32px] text-white">
+                Chase AI simplifies crypto derivatives trading with AI-powered
+                automation.{" "}
+                <span className="text-[#8AA5FF]">
+                  From personalized market insights to seamless execution
+                </span>
+                , we empower you to trade with confidence, control, and
+                precision.
+              </h4>
+              <div className="mt-[23px] flex gap-4 justify-center items-center">
+                <div className="w-7 h-7 rounded-full bg-[#8AA5FF]"></div>
+                <h5 className="text-[#E6ECFFB2] text-[16px]">
+                  Co-founder & ex google designer
+                </h5>
               </div>
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center mb-[100px] ">
+            <div className=" w-[1280px] h-[4px] line-bg " />
+            <div className="w-[147px] h-[43px] rounded-[22px] button-gradient relative mt-[100px]">
+              <div className="w-full h-full rounded-[22px] bg-black absolute top-[1px] left-[2px] flex items-center">
+                <h6 className="gradient-text ml-4 font-[family-name:var(--font-inter)] font-semibold">
+                  INTEGRATIONS
+                </h6>
+              </div>
+            </div>
+            <div className="flex flex-col gap-3 justify-center items-center">
+              <h5 className="text-[44px] font-[family-name:var(--font-inter)] text-[#ffffff] font-medium">
+                Seamless Integrations
+              </h5>
+              <p className="font-[family-name:var(--font-inter)] text-[#E6ECFFB2] text-center font-bold">
+                Connect with your favorite tools to streamline workflows
+              </p>
             </div>
           </div>
           <div>
