@@ -403,11 +403,11 @@ export default function Home() {
 
           <div className="pt-[100px]">
             <div className="relative">
-              <Image
+              {/* <Image
                 src={ctablur}
                 alt="cta"
                 className="absolute top-0 left-0 w-full h-full"
-              />
+              /> */}
               <div className="flex justify-center items-center mb-[96px]">
                 {" "}
                 <div className=" w-[1280px] h-[4px] line-bg" />
