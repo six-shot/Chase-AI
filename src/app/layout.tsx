@@ -1,6 +1,7 @@
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/globals/navbar";
+import Footer from "@/components/globals/footer";
 
 
 const inter = Inter({
@@ -24,7 +25,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
         <Navbar />
         {children}
-       
+    
       </body>
     </html>
   );

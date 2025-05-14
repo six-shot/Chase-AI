@@ -31,6 +31,7 @@ import graph from "../../public/svgs/graph.svg";
 import optimization from "../../public/svgs/optimization.svg";
 import management from "../../public/svgs/management.svg";
 import { useState } from "react";
+import Footer from "@/components/globals/footer";
 const marqueeFeatures = [
   "Automate your Trades",
   "Instant Transactions",
@@ -118,7 +119,6 @@ export default function Home() {
           alt="mask"
           className="absolute top-[-400px] -left-[600px] z-[30] opacity-[70%]"
         /> */}
-
         <div className="absolute top-0 h-[426px] w-full flex justify-center items-center">
           <Image
             src={heromask}
@@ -193,7 +193,6 @@ export default function Home() {
             </Marquee>
           </div>
         </div>
-
         <div className="max-w-[1440px] mx-auto  px-[60px]">
           <div className="pb-[96px] pt-[44px] grid grid-cols-3 gap-[25px]  items-center relative z-[40]">
             <div className="col-span-1 h-[397px] grid-card relative">
@@ -822,12 +821,14 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-              <div className="-mt-[200px] flex justify-center">
+              <div className=" -mt-[200px] flex justify-center">
                 <Image src={cta} alt="cta" />
               </div>
             </div>
           </div>
         </div>
+
+        <Footer/>
       </div>
     </div>
   );
