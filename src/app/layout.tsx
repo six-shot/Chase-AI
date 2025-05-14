@@ -1,7 +1,7 @@
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/globals/navbar";
-import Footer from "@/components/globals/footer";
+
 
 
 const inter = Inter({
