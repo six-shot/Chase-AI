@@ -380,7 +380,7 @@ export default function Home() {
                 Roadmap
               </h5>
               <p className="font-[family-name:var(--font-inter)] text-[#E6ECFFB2] text-center font-bold">
-                Chase AI's Roadmap Drives Innovation, From Launch to <br />{" "}
+                Chase AI&apos;s Roadmap Drives Innovation, From Launch to <br />{" "}
                 Global Expansion
               </p>
             </div>
