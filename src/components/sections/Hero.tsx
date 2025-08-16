@@ -47,7 +47,7 @@ export default function Hero() {
             perpetual <br className="hidden lg:block" /> contracts, and advanced
             trading features.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 items-center w-full sm:w-auto px-4 sm:px-0">
+          <div className="flex flex-row gap-4 items-center w-full sm:w-auto px-4 sm:px-0">
             <button className="w-full sm:w-auto cursor-pointer bg-[#2934FF] shadow-[0px_8px_40px_0px_rgba(17,0,255,0.5),_0px_0px_0px_1px_rgba(0,85,255,0.12)] text-white px-[18px] h-[45px] rounded-[10px] font-medium font-[family-name:var(--font-inter)] border border-[#fff3]">
               Whitepaper
             </button>
