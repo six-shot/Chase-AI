@@ -31,7 +31,11 @@ export default function Navbar() {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-      <div className="w-full nav-bg">
+      <div
+        className={`w-full nav-bg transition-all duration-300 ${
+          isScrolled ? " backdrop-blur-md" : "bg-transparent"
+        }`}
+      >
         <div className="w-full max-w-[1440px] mx-auto md:px-[90px] px-5 h-[68px] flex justify-between items-center">
           <Image src={logo} alt="logo" width={118} height={34} />
 
