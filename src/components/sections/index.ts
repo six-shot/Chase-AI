@@ -1,0 +1,12 @@
+export { default as Hero } from "./Hero";
+export { default as LogoMarquee } from "./LogoMarquee";
+export { default as FeaturesGrid } from "./FeaturesGrid";
+export { default as Benefits } from "./Benefits";
+export { default as MarqueeFeatures } from "./MarqueeFeatures";
+export { default as Roadmap } from "./Roadmap";
+export { default as FoundersNote } from "./FoundersNote";
+export { default as Integrations } from "./Integrations";
+export { default as Comparison } from "./Comparison";
+export { default as AIEfficiency } from "./AIEfficiency";
+export { default as FAQ } from "./FAQ";
+export { default as CTA } from "./CTA";
