@@ -7,10 +7,12 @@ import profileimg3 from "../../../public/img/profile img4.png";
 
 export default function Hero() {
   return (
-    <div className="pt-[68px] relative z-[10]">
+    <div className="pt-[68px] relative z-[10] w-full h-full ">
+      <div className="relative b">
       {/* <div className="w-[500px] h-[400px] bg-gra p-[1px]">
         <div  className="bg-rad w-full h-full"></div>
       </div> */}
+    
       <div className="flex flex-col items-center justify-center ">
         <div className="flex flex-col items-center gap-6 pt-[95px] px-4 sm:px-6 lg:px-0">
           <div className="flex flex-col sm:flex-row gap-2.5 items-center text-center sm:text-left">
@@ -58,6 +60,7 @@ export default function Hero() {
               Enter Dapp
             </button>
           </div>
+        </div>
         </div>
       </div>
     </div>

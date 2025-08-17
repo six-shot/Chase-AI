@@ -20,6 +20,7 @@ import {
 export default function Home() {
   return (
     <div className="relative  w-full">
+    
       <div className="relative hero-bg ">
         <div className="absolute top-0 h-[426px] w-full flex justify-center items-center">
           <Image
